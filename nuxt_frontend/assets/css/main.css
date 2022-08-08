@@ -1,0 +1,33 @@
+.full-page {
+  height: 100vh;
+}
+
+.submit-button {
+  border: #000 2px solid;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Colors */
+
+.light-yellow {
+  color: #FFFCEB;
+}
+
+.bg-light-yellow {
+  background-color: #FFFCEB;
+}
+
+.light-blue {
+  color: #EBF5FF;
+}
+
+.bg-light-blue {
+  background-color: #EBF5FF;
+}
+
+.hover-bg-light-blue:hover {
+  background-color: #EBF5FF;
+}
+
