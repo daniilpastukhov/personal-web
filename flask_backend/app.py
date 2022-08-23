@@ -16,6 +16,7 @@ class AppWrapper:
             SECRET_KEY=os.getenv('SECRET_KEY')
         )
         CORS(self._app)
+        self._app.register_blueprint(classification_blueprint, prefix='/classification')
 
     def run(self):
         self._app.run(host=os.getenv('HOST'), port=os.getenv('PORT'), debug=True)
@@ -26,9 +27,3 @@ class AppWrapper:
     @property
     def app(self):
         return self._app
-
-
-if __name__ == '__main__':
-    app = AppWrapper()
-    app.register_blueprint(classification_blueprint, prefix='classification')
-    app.run()

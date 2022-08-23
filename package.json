@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "@nuxtjs/axios": "^5.13.6",
-    "typewriter-vue": "^0.5.19",
-    "vue-material-design-icons": "^5.0.0",
-    "vue-upload-drop-images": "^1.0.7"
-  }
-}
